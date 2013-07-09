@@ -11,7 +11,13 @@ module Artillery3
     end
 
     def collisioned?
-      false
+      @world.collisionables.each do |collisionable|
+        if collisionable.x == position
+          return true
+        end
+      end
+
+      return false
     end
 
   end

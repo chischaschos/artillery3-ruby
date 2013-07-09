@@ -7,7 +7,8 @@ module Artillery3
     end
 
     def shoot angle, velocity
-      @world.create_shot Shot.new(angle, velocity)
+      shot = Shot.new(angle, velocity)
+      @world.impacts << Impact.new(shot, @world)
     end
 
   end

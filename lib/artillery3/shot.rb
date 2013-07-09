@@ -1,7 +1,7 @@
 module Artillery3
   class Shot
 
-    attr_accessor :angle, :velocity
+    attr_reader :angle, :velocity
 
     def initialize angle, velocity
       @angle = angle

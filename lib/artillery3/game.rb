@@ -1,6 +1,6 @@
 module Artillery3
   class Game
-    attr_accessor :players
+    attr_reader :players
 
     def initialize players_number
       @players = []

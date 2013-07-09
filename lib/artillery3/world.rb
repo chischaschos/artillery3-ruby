@@ -1,16 +1,10 @@
 module Artillery3
   class World
+    attr_reader :impacts, :collisionables
+
     def initialize
       @impacts = []
+      @collisionables = []
     end
-
-    def impacts
-      @impacts
-    end
-
-    def create_shot shot
-      @impacts << Impact.new(shot, self)
-    end
-
   end
 end
