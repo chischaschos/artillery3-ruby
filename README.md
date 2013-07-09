@@ -1,6 +1,12 @@
 # Artyllery3::Ruby
 
-TODO: Write a gem description
+An implementation of Artillery-3 (by Mike Forman, N. E. Lyon, Brian
+West) from http://www.atariarchives.org/morebasicgames/showpage.php?page=2
+
+The only purpose is to practice TDD and strive to create a game.
+
+There is not playable game yet, so the only thing you can do is look at
+the specs and find out what it does.
 
 ## Installation
 
@@ -18,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TBD
 
 ## Contributing
 
