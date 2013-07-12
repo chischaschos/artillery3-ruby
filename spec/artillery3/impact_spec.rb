@@ -6,8 +6,16 @@ describe Artillery3::Impact do
     Artillery3::Impact.new shot, world
   end
 
+  let(:world) do
+    Artillery3::World.new
+  end
+
+  let(:player) do
+    Artillery3::Player.new world
+  end
+
   let(:shot) do
-    Artillery3::Shot.new 20, 30
+    Artillery3::Shot.new 20, 30, player
   end
 
   context "when receiving a 20 degree shot in an empty world" do

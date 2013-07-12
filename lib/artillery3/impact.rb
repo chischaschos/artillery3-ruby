@@ -1,5 +1,7 @@
 module Artillery3
   class Impact
+    attr_reader :shot
+
     def initialize shot, world
       @shot = shot
       @world = world
